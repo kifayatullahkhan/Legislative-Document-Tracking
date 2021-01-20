@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsDailyAgenda" targetNamespace="http://tempuri.org/DsDailyAgenda.xsd" xmlns:mstns="http://tempuri.org/DsDailyAgenda.xsd" xmlns="http://tempuri.org/DsDailyAgenda.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsDailyAgenda" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DsDailyAgenda" msprop:Generator_UserDSName="DsDailyAgenda" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DailyAgenda" msprop:Generator_UserTableName="DailyAgenda" msprop:Generator_RowDeletedName="DailyAgendaRowDeleted" msprop:Generator_TableClassName="DailyAgendaDataTable" msprop:Generator_RowChangedName="DailyAgendaRowChanged" msprop:Generator_RowClassName="DailyAgendaRow" msprop:Generator_RowChangingName="DailyAgendaRowChanging" msprop:Generator_RowEvArgName="DailyAgendaRowChangeEvent" msprop:Generator_RowEvHandlerName="DailyAgendaRowChangeEventHandler" msprop:Generator_TablePropName="DailyAgenda" msprop:Generator_TableVarName="tableDailyAgenda" msprop:Generator_RowDeletingName="DailyAgendaRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DAID" msprop:Generator_UserColumnName="DAID" msprop:Generator_ColumnPropNameInRow="DAID" msprop:Generator_ColumnVarNameInTable="columnDAID" msprop:Generator_ColumnPropNameInTable="DAIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DATextPashto" msprop:Generator_UserColumnName="DATextPashto" msprop:Generator_ColumnPropNameInRow="DATextPashto" msprop:Generator_ColumnVarNameInTable="columnDATextPashto" msprop:Generator_ColumnPropNameInTable="DATextPashtoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DATextDari" msprop:Generator_UserColumnName="DATextDari" msprop:Generator_ColumnPropNameInRow="DATextDari" msprop:Generator_ColumnVarNameInTable="columnDATextDari" msprop:Generator_ColumnPropNameInTable="DATextDariColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DADated" msprop:Generator_UserColumnName="DADated" msprop:Generator_ColumnPropNameInRow="DADated" msprop:Generator_ColumnVarNameInTable="columnDADated" msprop:Generator_ColumnPropNameInTable="DADatedColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Comments" msprop:Generator_UserColumnName="Comments" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

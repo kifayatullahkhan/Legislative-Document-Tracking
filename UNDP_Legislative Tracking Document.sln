@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UNDP_Legislative Tracking Document", "UNDP_Legislative Tracking Document\UNDP_Legislative Tracking Document.vbproj", "{3F197F4E-6C09-48B0-AF53-9E41ADD68DA7}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "UNDP", "UNDP\UNDP.vdproj", "{9A665964-C143-41DC-8398-1C3A653127AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F197F4E-6C09-48B0-AF53-9E41ADD68DA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F197F4E-6C09-48B0-AF53-9E41ADD68DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F197F4E-6C09-48B0-AF53-9E41ADD68DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F197F4E-6C09-48B0-AF53-9E41ADD68DA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A665964-C143-41DC-8398-1C3A653127AC}.Debug|Any CPU.ActiveCfg = Debug
+		{9A665964-C143-41DC-8398-1C3A653127AC}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

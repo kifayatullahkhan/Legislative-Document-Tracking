@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSLogSheet" targetNamespace="http://tempuri.org/DSLogSheet.xsd" xmlns:mstns="http://tempuri.org/DSLogSheet.xsd" xmlns="http://tempuri.org/DSLogSheet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSLogSheet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DSLogSheet" msprop:Generator_UserDSName="DSLogSheet" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LogSheet" msprop:Generator_UserTableName="LogSheet" msprop:Generator_RowDeletedName="LogSheetRowDeleted" msprop:Generator_TableClassName="LogSheetDataTable" msprop:Generator_RowChangedName="LogSheetRowChanged" msprop:Generator_RowClassName="LogSheetRow" msprop:Generator_RowChangingName="LogSheetRowChanging" msprop:Generator_RowEvArgName="LogSheetRowChangeEvent" msprop:Generator_RowEvHandlerName="LogSheetRowChangeEventHandler" msprop:Generator_TablePropName="LogSheet" msprop:Generator_TableVarName="tableLogSheet" msprop:Generator_RowDeletingName="LogSheetRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LogID" msprop:Generator_UserColumnName="LogID" msprop:Generator_ColumnPropNameInRow="LogID" msprop:Generator_ColumnVarNameInTable="columnLogID" msprop:Generator_ColumnPropNameInTable="LogIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CurrDatTime" msprop:Generator_UserColumnName="CurrDatTime" msprop:Generator_ColumnPropNameInRow="CurrDatTime" msprop:Generator_ColumnVarNameInTable="columnCurrDatTime" msprop:Generator_ColumnPropNameInTable="CurrDatTimeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Type" msprop:Generator_UserColumnName="Type" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInTable="TypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UserName" msprop:Generator_UserColumnName="UserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Category" msprop:Generator_UserColumnName="Category" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInTable="CategoryColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

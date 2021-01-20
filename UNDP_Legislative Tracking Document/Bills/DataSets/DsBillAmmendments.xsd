@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsBillAmmendments" targetNamespace="http://tempuri.org/DsBillAmmendments.xsd" xmlns:mstns="http://tempuri.org/DsBillAmmendments.xsd" xmlns="http://tempuri.org/DsBillAmmendments.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsBillAmmendments" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DsBillAmmendments" msprop:Generator_UserDSName="DsBillAmmendments" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BillAmmendments" msprop:Generator_UserTableName="BillAmmendments" msprop:Generator_RowDeletedName="BillAmmendmentsRowDeleted" msprop:Generator_TableClassName="BillAmmendmentsDataTable" msprop:Generator_RowChangedName="BillAmmendmentsRowChanged" msprop:Generator_RowClassName="BillAmmendmentsRow" msprop:Generator_RowChangingName="BillAmmendmentsRowChanging" msprop:Generator_RowEvArgName="BillAmmendmentsRowChangeEvent" msprop:Generator_RowEvHandlerName="BillAmmendmentsRowChangeEventHandler" msprop:Generator_TablePropName="BillAmmendments" msprop:Generator_TableVarName="tableBillAmmendments" msprop:Generator_RowDeletingName="BillAmmendmentsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BlTitle" msprop:Generator_UserColumnName="BlTitle" msprop:Generator_ColumnPropNameInRow="BlTitle" msprop:Generator_ColumnVarNameInTable="columnBlTitle" msprop:Generator_ColumnPropNameInTable="BlTitleColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BlTextPashto" msprop:Generator_UserColumnName="BlTextPashto" msprop:Generator_ColumnPropNameInRow="BlTextPashto" msprop:Generator_ColumnVarNameInTable="columnBlTextPashto" msprop:Generator_ColumnPropNameInTable="BlTextPashtoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BlTextDari" msprop:Generator_UserColumnName="BlTextDari" msprop:Generator_ColumnPropNameInRow="BlTextDari" msprop:Generator_ColumnVarNameInTable="columnBlTextDari" msprop:Generator_ColumnPropNameInTable="BlTextDariColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Comments" msprop:Generator_UserColumnName="Comments" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AmBy" msprop:Generator_UserColumnName="AmBy" msprop:Generator_ColumnPropNameInRow="AmBy" msprop:Generator_ColumnVarNameInTable="columnAmBy" msprop:Generator_ColumnPropNameInTable="AmByColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

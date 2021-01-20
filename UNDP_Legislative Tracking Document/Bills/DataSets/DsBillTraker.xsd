@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsBillTraker" targetNamespace="http://tempuri.org/DsBillTraker.xsd" xmlns:mstns="http://tempuri.org/DsBillTraker.xsd" xmlns="http://tempuri.org/DsBillTraker.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsBillTraker" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DsBillTraker" msprop:Generator_UserDSName="DsBillTraker" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BillTraker" msprop:Generator_UserTableName="BillTraker" msprop:Generator_RowDeletedName="BillTrakerRowDeleted" msprop:Generator_TableClassName="BillTrakerDataTable" msprop:Generator_RowChangedName="BillTrakerRowChanged" msprop:Generator_RowClassName="BillTrakerRow" msprop:Generator_RowChangingName="BillTrakerRowChanging" msprop:Generator_RowEvArgName="BillTrakerRowChangeEvent" msprop:Generator_RowEvHandlerName="BillTrakerRowChangeEventHandler" msprop:Generator_TablePropName="BillTraker" msprop:Generator_TableVarName="tableBillTraker" msprop:Generator_RowDeletingName="BillTrakerRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BlTrakerID" msprop:Generator_UserColumnName="BlTrakerID" msprop:Generator_ColumnPropNameInRow="BlTrakerID" msprop:Generator_ColumnVarNameInTable="columnBlTrakerID" msprop:Generator_ColumnPropNameInTable="BlTrakerIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BlTitle" msprop:Generator_UserColumnName="BlTitle" msprop:Generator_ColumnPropNameInRow="BlTitle" msprop:Generator_ColumnVarNameInTable="columnBlTitle" msprop:Generator_ColumnPropNameInTable="BlTitleColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CommName" msprop:Generator_UserColumnName="CommName" msprop:Generator_ColumnPropNameInRow="CommName" msprop:Generator_ColumnVarNameInTable="columnCommName" msprop:Generator_ColumnPropNameInTable="CommNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BlTrakerDate" msprop:Generator_UserColumnName="BlTrakerDate" msprop:Generator_ColumnPropNameInRow="BlTrakerDate" msprop:Generator_ColumnVarNameInTable="columnBlTrakerDate" msprop:Generator_ColumnPropNameInTable="BlTrakerDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="StatusTitle" msprop:Generator_UserColumnName="StatusTitle" msprop:Generator_ColumnPropNameInRow="StatusTitle" msprop:Generator_ColumnVarNameInTable="columnStatusTitle" msprop:Generator_ColumnPropNameInTable="StatusTitleColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Comments" msprop:Generator_UserColumnName="Comments" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="HouseName" msprop:Generator_UserColumnName="HouseName" msprop:Generator_ColumnPropNameInRow="HouseName" msprop:Generator_ColumnVarNameInTable="columnHouseName" msprop:Generator_ColumnPropNameInTable="HouseNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

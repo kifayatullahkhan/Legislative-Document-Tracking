@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSBills" targetNamespace="http://tempuri.org/DSBills.xsd" xmlns:mstns="http://tempuri.org/DSBills.xsd" xmlns="http://tempuri.org/DSBills.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSBills" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DSBills" msprop:Generator_DataSetName="DSBills" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Bills" msprop:Generator_UserTableName="Bills" msprop:Generator_RowDeletedName="BillsRowDeleted" msprop:Generator_RowChangedName="BillsRowChanged" msprop:Generator_RowClassName="BillsRow" msprop:Generator_RowChangingName="BillsRowChanging" msprop:Generator_RowEvArgName="BillsRowChangeEvent" msprop:Generator_RowEvHandlerName="BillsRowChangeEventHandler" msprop:Generator_TableClassName="BillsDataTable" msprop:Generator_TableVarName="tableBills" msprop:Generator_RowDeletingName="BillsRowDeleting" msprop:Generator_TablePropName="Bills">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BlID" msprop:Generator_UserColumnName="BlID" msprop:Generator_ColumnPropNameInRow="BlID" msprop:Generator_ColumnVarNameInTable="columnBlID" msprop:Generator_ColumnPropNameInTable="BlIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BlNumber" msprop:Generator_UserColumnName="BlNumber" msprop:Generator_ColumnPropNameInRow="BlNumber" msprop:Generator_ColumnVarNameInTable="columnBlNumber" msprop:Generator_ColumnPropNameInTable="BlNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BlTitle" msprop:Generator_UserColumnName="BlTitle" msprop:Generator_ColumnPropNameInRow="BlTitle" msprop:Generator_ColumnVarNameInTable="columnBlTitle" msprop:Generator_ColumnPropNameInTable="BlTitleColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BlTextPashto" msprop:Generator_UserColumnName="BlTextPashto" msprop:Generator_ColumnPropNameInRow="BlTextPashto" msprop:Generator_ColumnVarNameInTable="columnBlTextPashto" msprop:Generator_ColumnPropNameInTable="BlTextPashtoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BlTextDari" msprop:Generator_UserColumnName="BlTextDari" msprop:Generator_ColumnPropNameInRow="BlTextDari" msprop:Generator_ColumnVarNameInTable="columnBlTextDari" msprop:Generator_ColumnPropNameInTable="BlTextDariColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BlIssuDate" msprop:Generator_UserColumnName="BlIssuDate" msprop:Generator_ColumnPropNameInRow="BlIssuDate" msprop:Generator_ColumnVarNameInTable="columnBlIssuDate" msprop:Generator_ColumnPropNameInTable="BlIssuDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DeptName" msprop:Generator_UserColumnName="DeptName" msprop:Generator_ColumnPropNameInRow="DeptName" msprop:Generator_ColumnVarNameInTable="columnDeptName" msprop:Generator_ColumnPropNameInTable="DeptNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BlMembers" msprop:Generator_UserColumnName="BlMembers" msprop:Generator_ColumnPropNameInRow="BlMembers" msprop:Generator_ColumnVarNameInTable="columnBlMembers" msprop:Generator_ColumnPropNameInTable="BlMembersColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Comments" msprop:Generator_UserColumnName="Comments" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

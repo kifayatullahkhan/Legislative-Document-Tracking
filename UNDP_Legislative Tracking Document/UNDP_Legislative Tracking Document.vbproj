@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3F197F4E-6C09-48B0-AF53-9E41ADD68DA7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>UNDP_Legislative_Tracking_Document.My.MyApplication</StartupObject>
+    <RootNamespace>UNDP_Legislative_Tracking_Document</RootNamespace>
+    <AssemblyName>UNDP_Legislative Tracking Document</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>UNDP_Legislative Tracking Document.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>UNDP_Legislative Tracking Document.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agenda\DsDailyAgenda.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsDailyAgenda.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda\Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda\Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agenda\FrmAgendaPrint.Designer.vb">
+      <DependentUpon>FrmAgendaPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda\FrmAgendaPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agenda\FrmDailyAgenda.Designer.vb">
+      <DependentUpon>FrmDailyAgenda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda\FrmDailyAgenda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agenda\RptDailyAgenda.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptDailyAgenda.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bills\DataSets\DsBillAmmendments.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsBillAmmendments.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bills\DataSets\DSBills.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSBills.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bills\DataSets\DSBills2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSBills2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bills\DataSets\DsBillTraker.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsBillTraker.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bills\FrmBillAmmendments.Designer.vb">
+      <DependentUpon>FrmBillAmmendments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bills\FrmBillAmmendments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bills\FrmBills.designer.vb">
+      <DependentUpon>FrmBills.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bills\FrmBills.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bills\FrmBillsPrint.designer.vb">
+      <DependentUpon>FrmBillsPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bills\FrmBillsPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bills\FrmBillTraker.Designer.vb">
+      <DependentUpon>FrmBillTraker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bills\FrmBillTraker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bills\FrmDepartment.designer.vb">
+      <DependentUpon>FrmDepartment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bills\FrmDepartment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bills\FrmPrintBillAmmendments.Designer.vb">
+      <DependentUpon>FrmPrintBillAmmendments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bills\FrmPrintBillAmmendments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bills\Reports\RptBillAmmendments.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptBillAmmendments.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bills\Reports\RptBills.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptBills.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bills\Reports\RptBills2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptBills2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bills\Reports\RptBillTraker.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptBillTraker.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Commission\FrmCommission.Designer.vb">
+      <DependentUpon>FrmCommission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Commission\FrmCommission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Commission\FrmForwardBillToCommission.Designer.vb">
+      <DependentUpon>FrmForwardBillToCommission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Commission\FrmForwardBillToCommission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHelp.designer.vb">
+      <DependentUpon>FrmHelp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHelp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportViewer.Designer.vb">
+      <DependentUpon>FrmReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmView.Designer.vb">
+      <DependentUpon>FrmView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Houses\FrmForwarBillToHouse.Designer.vb">
+      <DependentUpon>FrmForwarBillToHouse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Houses\FrmForwarBillToHouse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Houses\FrmHouses.Designer.vb">
+      <DependentUpon>FrmHouses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Houses\FrmHouses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogSheet\DSLogSheet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSLogSheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LogSheet\FrmLogSheet.Designer.vb">
+      <DependentUpon>FrmLogSheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogSheet\FrmLogSheet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogSheet\RptLogSheet.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptLogSheet.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Members\FrmMembers.Designer.vb">
+      <DependentUpon>FrmMembers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Members\FrmMembers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\MainModule.vb">
+    </Compile>
+    <Compile Include="Modules\MdEncrptionDecryption.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Resolution\FrmResolution.Designer.vb">
+      <DependentUpon>FrmResolution.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resolution\FrmResolution.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Status\FrmStatus.Designer.vb">
+      <DependentUpon>FrmStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Status\FrmStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagment\FrmGroupRights.designer.vb">
+      <DependentUpon>FrmGroupRights.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagment\FrmGroupRights.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagment\FrmLogin.designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagment\FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagment\FrmMainMdi.designer.vb">
+      <DependentUpon>FrmMainMdi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagment\FrmMainMdi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagment\FrmSetOwnPassword.designer.vb">
+      <DependentUpon>FrmSetOwnPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagment\FrmSetOwnPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagment\FrmSetPassword.designer.vb">
+      <DependentUpon>FrmSetPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagment\FrmSetPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagment\FrmSetting.Designer.vb">
+      <DependentUpon>FrmSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagment\FrmSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagment\FrmUserGroups.designer.vb">
+      <DependentUpon>FrmUserGroups.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagment\FrmUserGroups.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagment\FrmUserInformation.designer.vb">
+      <DependentUpon>FrmUserInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagment\FrmUserInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VB.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Agenda\Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agenda\FrmAgendaPrint.resx">
+      <DependentUpon>FrmAgendaPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agenda\FrmDailyAgenda.resx">
+      <DependentUpon>FrmDailyAgenda.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agenda\RptDailyAgenda.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptDailyAgenda.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bills\FrmBillAmmendments.resx">
+      <DependentUpon>FrmBillAmmendments.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bills\FrmBills.resx">
+      <DependentUpon>FrmBills.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bills\FrmBillsPrint.resx">
+      <DependentUpon>FrmBillsPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bills\FrmBillTraker.resx">
+      <DependentUpon>FrmBillTraker.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bills\FrmDepartment.resx">
+      <DependentUpon>FrmDepartment.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bills\FrmPrintBillAmmendments.resx">
+      <DependentUpon>FrmPrintBillAmmendments.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bills\Reports\RptBillAmmendments.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptBillAmmendments.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bills\Reports\RptBills.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptBills.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bills\Reports\RptBills2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptBills2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bills\Reports\RptBillTraker.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptBillTraker.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commission\FrmCommission.resx">
+      <DependentUpon>FrmCommission.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commission\FrmForwardBillToCommission.resx">
+      <DependentUpon>FrmForwardBillToCommission.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHelp.resx">
+      <DependentUpon>FrmHelp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportViewer.resx">
+      <DependentUpon>FrmReportViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmView.resx">
+      <DependentUpon>FrmView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Houses\FrmForwarBillToHouse.resx">
+      <DependentUpon>FrmForwarBillToHouse.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Houses\FrmHouses.resx">
+      <DependentUpon>FrmHouses.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogSheet\FrmLogSheet.resx">
+      <DependentUpon>FrmLogSheet.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogSheet\RptLogSheet.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptLogSheet.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\FrmMembers.resx">
+      <DependentUpon>FrmMembers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resolution\FrmResolution.resx">
+      <DependentUpon>FrmResolution.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Status\FrmStatus.resx">
+      <DependentUpon>FrmStatus.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagment\FrmGroupRights.resx">
+      <DependentUpon>FrmGroupRights.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagment\FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagment\FrmMainMdi.resx">
+      <DependentUpon>FrmMainMdi.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagment\FrmSetOwnPassword.resx">
+      <DependentUpon>FrmSetOwnPassword.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagment\FrmSetPassword.resx">
+      <DependentUpon>FrmSetPassword.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagment\FrmSetting.resx">
+      <DependentUpon>FrmSetting.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagment\FrmUserGroups.resx">
+      <DependentUpon>FrmUserGroups.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagment\FrmUserInformation.resx">
+      <DependentUpon>FrmUserInformation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Agenda\DsDailyAgenda.xsc">
+      <DependentUpon>DsDailyAgenda.xsd</DependentUpon>
+    </None>
+    <None Include="Agenda\DsDailyAgenda.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsDailyAgenda.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Agenda\DsDailyAgenda.xss">
+      <DependentUpon>DsDailyAgenda.xsd</DependentUpon>
+    </None>
+    <None Include="Bills\DataSets\DsBillAmmendments.xsc">
+      <DependentUpon>DsBillAmmendments.xsd</DependentUpon>
+    </None>
+    <None Include="Bills\DataSets\DsBillAmmendments.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsBillAmmendments.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Bills\DataSets\DsBillAmmendments.xss">
+      <DependentUpon>DsBillAmmendments.xsd</DependentUpon>
+    </None>
+    <None Include="Bills\DataSets\DSBills.xsc">
+      <DependentUpon>DSBills.xsd</DependentUpon>
+    </None>
+    <None Include="Bills\DataSets\DSBills.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSBills.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bills\DataSets\DSBills.xss">
+      <DependentUpon>DSBills.xsd</DependentUpon>
+    </None>
+    <None Include="Bills\DataSets\DSBills2.xsc">
+      <DependentUpon>DSBills2.xsd</DependentUpon>
+    </None>
+    <None Include="Bills\DataSets\DSBills2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSBills2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bills\DataSets\DSBills2.xss">
+      <DependentUpon>DSBills2.xsd</DependentUpon>
+    </None>
+    <None Include="Bills\DataSets\DsBillTraker.xsc">
+      <DependentUpon>DsBillTraker.xsd</DependentUpon>
+    </None>
+    <None Include="Bills\DataSets\DsBillTraker.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsBillTraker.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Bills\DataSets\DsBillTraker.xss">
+      <DependentUpon>DsBillTraker.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LogSheet\DSLogSheet.xsc">
+      <DependentUpon>DSLogSheet.xsd</DependentUpon>
+    </None>
+    <None Include="LogSheet\DSLogSheet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSLogSheet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LogSheet\DSLogSheet.xss">
+      <DependentUpon>DSLogSheet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\screen.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
